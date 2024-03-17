@@ -1,15 +1,10 @@
 import { useState } from "react";
 import { Layout, Menu, Button } from "@arco-design/web-react";
-import {
-  IconCopy,
-  IconCaretRight,
-  IconCaretLeft,
-} from "@arco-design/web-react/icon";
+import { IconCaretRight, IconCaretLeft } from "@arco-design/web-react/icon";
 import AppRoutes from "../components/AppRoutes";
 import { Link } from "react-router-dom";
 
 const MenuItem = Menu.Item;
-// const SubMenu = Menu.SubMenu;
 const Sider = Layout.Sider;
 const Header = Layout.Header;
 const Content = Layout.Content;
@@ -35,14 +30,26 @@ const Home = () => {
         breakpoint="xl"
         className="h-screen"
       >
-        <div className="logo flex items-center gap-6">
-          <IconCopy />
-          <p className="">Components</p>
-        </div>
+        <Header
+          style={{
+            width: "100%",
+            backgroundColor: "#4682b4",
+            position: "fixed",
+            zIndex: 20,
+          }}
+        >
+          <span className="ml-4 text-xl text-white">Components</span>
+          <span className="text-xl text-white">
+            <span className="ml-20 text-xl text-white">{clickedItem}</span>
+          </span>
+        </Header>
+
         <Button
-          shape="round"
+          shape="circle"
           type="secondary"
-          className="absolute top-10 -right-4 z-10 border-2"
+          size="large"
+          className="absolute top-10 -right-2"
+          style={{ zIndex: 100, boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)" }}
           onClick={handleCollapsed}
         >
           {collapsed ? <IconCaretRight /> : <IconCaretLeft />}
@@ -50,7 +57,7 @@ const Home = () => {
         <Menu
           defaultOpenKeys={["1"]}
           defaultSelectedKeys={["1"]}
-          style={{ width: "100%", marginTop: 30 }}
+          style={{ width: "100%", marginTop: 70 }}
         >
           <Link to="/">
             <MenuItem
@@ -80,11 +87,7 @@ const Home = () => {
               Checkbox
             </MenuItem>
           </Link>
-          {/* <Link to="/dialog">
-            <MenuItem key="6" onClick={() => handleMenuItemClick("Dialog")}>
-              dialog
-            </MenuItem>
-          </Link> */}
+
           <Link to="/drawer">
             <MenuItem key="7" onClick={() => handleMenuItemClick("Drawer")}>
               Drawer
@@ -196,12 +199,19 @@ const Home = () => {
       </Sider>
 
       <Layout>
-        <Header>
-          <span className="ml-10 text-lg">{clickedItem}</span>
-        </Header>
+        {/* <Header
+          style={{
+            width: "86%",
+            backgroundColor: "#4682b4",
+            position: "fixed",
+            zIndex: 20,
+          }}
+        >
+          <span className="ml-10 text-xl text-white">{clickedItem}</span>
+        </Header> */}
         <hr />
         <Layout style={{ padding: "0 2px" }}>
-          <Content className="pb-8">
+          <Content className="py-12">
             <AppRoutes />
           </Content>
         </Layout>

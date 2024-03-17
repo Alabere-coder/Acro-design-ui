@@ -4,7 +4,6 @@ import Buttons from "../pages/Button";
 import Inputs from "../pages/Inputs";
 import Card from "../pages/Card";
 import Checkbox from "../pages/Checkbox";
-import Dialog from "../pages/Dialog";
 import Dropdown from "../pages/Dropdown";
 import Select from "../pages/Select";
 import Separator from "../pages/Separator";
@@ -33,7 +32,6 @@ const AppRoutes = () => {
       <Route path="/button" element={<Buttons />}></Route>
       <Route path="/card" element={<Card />}></Route>
       <Route path="/checkbox" element={<Checkbox />}></Route>
-      <Route path="/dialog" element={<Dialog />}></Route>
       <Route path="/drawer" element={<Drawer />}></Route>
       <Route path="/dropdown" element={<Dropdown />}></Route>
       <Route path="/inputs" element={<Inputs />}></Route>

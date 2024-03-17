@@ -1,9 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Alert from "./pages/Alert.tsx";
 import Buttons from "./pages/Button.tsx";
 import Card from "./pages/Card.tsx";
 import Checkbox from "./pages/Checkbox.tsx";
-import Dialog from "./pages/Dialog.tsx";
 import Separator from "./pages/Separator.tsx";
 import Drawer from "./pages/Drawer.tsx";
 import Dropdown from "./pages/Dropdown.tsx";
@@ -37,10 +36,6 @@ export const router = createBrowserRouter([
   {
     path: "/checkbox",
     element: <Checkbox />,
-  },
-  {
-    path: "/dialog",
-    element: <Dialog />,
   },
   {
     path: "/divider",
