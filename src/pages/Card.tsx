@@ -3,12 +3,7 @@ import { Divider, Typography, Card } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import ReusableCard from "../components/Card.";
-import HoverableCard from "../components/card/HoverableCard";
-import BorderlessCard from "../components/card/BorderlessCard";
-import MetaCard from "../components/card/MetaCard";
-import CardRow from "../components/card/CardRow";
-import CardGrid from "../components/card/CardGrid";
-import CardSkeleton from "../components/card/CardSkeleton";
+
 const { Title, Paragraph } = Typography;
 
 const Cards = () => {
@@ -55,12 +50,6 @@ const Cards = () => {
           {codeString}
         </SyntaxHighlighter>
       </ReusableCard>
-      <HoverableCard />
-      <BorderlessCard />
-      <MetaCard />
-      <CardRow />
-      <CardGrid />
-      <CardSkeleton />
     </div>
   );
 };

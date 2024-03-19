@@ -3,8 +3,10 @@ import { Layout, Menu, Button } from "@arco-design/web-react";
 import { IconCaretRight, IconCaretLeft } from "@arco-design/web-react/icon";
 import AppRoutes from "../components/AppRoutes";
 import { Link } from "react-router-dom";
+import { IconFolder } from "@arco-design/web-react/icon";
 
 const MenuItem = Menu.Item;
+const SubMenu = Menu.SubMenu;
 const Sider = Layout.Sider;
 const Header = Layout.Header;
 const Content = Layout.Content;
@@ -67,16 +69,35 @@ const Home = () => {
               Getting Started
             </MenuItem>
           </Link>
+
+          <SubMenu
+            key="4"
+            title={
+              <span>
+                <IconFolder />
+                Button
+              </span>
+            }
+          >
+            {/* <MenuItem >Basic</MenuItem> */}
+            <Link to="/button">
+              <MenuItem key="4_1" onClick={() => handleMenuItemClick("Button")}>
+                Basic
+              </MenuItem>
+            </Link>
+            <MenuItem key="4_2">IconButton</MenuItem>
+            <MenuItem key="4_3">ButtonShape</MenuItem>
+            <MenuItem key="4_4">ButtonSize</MenuItem>
+            <MenuItem key="4_5">ButtonGroup</MenuItem>
+            <MenuItem key="4_6">LongButton</MenuItem>
+          </SubMenu>
+
           <Link to="/alert">
             <MenuItem key="2" onClick={() => handleMenuItemClick("Alert")}>
               Alert
             </MenuItem>
           </Link>
-          <Link to="/button">
-            <MenuItem key="3" onClick={() => handleMenuItemClick("Button")}>
-              Button
-            </MenuItem>
-          </Link>
+
           <Link to="/card">
             <MenuItem key="4" onClick={() => handleMenuItemClick("Card")}>
               Card

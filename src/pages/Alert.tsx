@@ -1,9 +1,5 @@
 import { Divider, Typography, Alert } from "@arco-design/web-react";
 import ReusableCard from "../components/Card.";
-import AlertTypes from "../components/alert/AlertTypes";
-import ClosAbleAlert from "../components/alert/CloseAblle";
-import AlertWithTitle from "../components/alert/AlertWithTitle";
-import AlertAction from "../components/alert/AlertAction";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 const { Title, Paragraph } = Typography;
@@ -42,10 +38,6 @@ const AlertS = () => {
           {codeString}
         </SyntaxHighlighter>
       </ReusableCard>
-      <AlertTypes />
-      <ClosAbleAlert />
-      <AlertWithTitle />
-      <AlertAction />
     </div>
   );
 };

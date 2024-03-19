@@ -3,9 +3,6 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import ReusableCard from "../components/Card.";
 import { useState } from "react";
-import DrawerWithForm from "../components/drawer/DrawerWithForm";
-import DrawerInfoPreview from "../components/drawer/DrawerInfoPrev";
-import DrawerPosition from "../components/drawer/DrawerPosition";
 const { Title, Paragraph } = Typography;
 
 const Drawers = () => {
@@ -88,9 +85,6 @@ const Drawers = () => {
           </SyntaxHighlighter>
         </ReusableCard>
       </div>
-      <DrawerWithForm />
-      <DrawerInfoPreview />
-      <DrawerPosition />
     </>
   );
 };

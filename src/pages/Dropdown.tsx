@@ -9,7 +9,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import ReusableCard from "../components/Card.";
 import { IconDown } from "@arco-design/web-react/icon";
-import DropdownPosition from "../components/dropdown/DropPosition";
+
 const dropList = (
   <Menu>
     <Menu.Item key="1">Beijing</Menu.Item>
@@ -76,7 +76,6 @@ const Dropdowns = () => {
           </SyntaxHighlighter>
         </ReusableCard>
       </div>
-      <DropdownPosition />
     </>
   );
 };
