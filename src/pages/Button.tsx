@@ -42,14 +42,7 @@ const Buttons: React.FC = () => {
       >
         Click Me
       </Button>
-      {/* <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 10,
-          
-        }}
-      > */}
+
       <div
         style={{
           display: "flex",
@@ -67,6 +60,7 @@ const Buttons: React.FC = () => {
             gap: 20,
           }}
         >
+          <Paragraph style={{ fontWeight: "bold" }}>Name</Paragraph>
           <Paragraph>Size</Paragraph>
           <Paragraph>Type</Paragraph>
           <Paragraph>Status</Paragraph>
@@ -81,10 +75,11 @@ const Buttons: React.FC = () => {
             gap: 20,
           }}
         >
-          <Paragraph>"mini"</Paragraph>
-          <Paragraph>"primary"</Paragraph>
-          <Paragraph>"danger"</Paragraph>
-          <Paragraph>"false"</Paragraph>
+          <Paragraph style={{ fontWeight: "bold" }}>Default</Paragraph>
+          <Paragraph className="txt">"mini"</Paragraph>
+          <Paragraph className="txt">"primary"</Paragraph>
+          <Paragraph className="txt">"danger"</Paragraph>
+          <Paragraph className="txt">"false"</Paragraph>
         </div>
 
         <div
@@ -95,6 +90,7 @@ const Buttons: React.FC = () => {
             gap: 20,
           }}
         >
+          <Paragraph style={{ fontWeight: "bold" }}>Control</Paragraph>
           <Radio.Group
             options={["mini", "small", "default", "large"]}
             value={size}
@@ -127,7 +123,6 @@ const Buttons: React.FC = () => {
           />
         </div>
       </div>
-      {/* </div> */}
 
       <Divider />
       <Paragraph>Basic usage</Paragraph>
