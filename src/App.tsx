@@ -49,7 +49,7 @@ const App = () => {
         <Menu
           defaultOpenKeys={["0"]}
           defaultSelectedKeys={[""]}
-          style={{ width: "100%", marginTop: 30 }}
+          style={{ width: "100%", marginTop: 70 }}
         >
           <Link to="/getStarted">
             <MenuItem key="0">
