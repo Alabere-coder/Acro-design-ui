@@ -6,7 +6,7 @@ import {
 } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import ReusableCard from "../components/Card.";
+import ReusableCard from "../../../components/Card.";
 const { Title, Paragraph } = Typography;
 
 const columns: TableColumnProps[] = [

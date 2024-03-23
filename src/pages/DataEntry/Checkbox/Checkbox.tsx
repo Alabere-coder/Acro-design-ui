@@ -1,25 +1,25 @@
-import { Typography, Switch, Divider } from "@arco-design/web-react";
+import { Divider, Typography, Checkbox } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import ReusableCard from "../components/Card.";
+import ReusableCard from "../../../components/Card.";
 const { Title, Paragraph } = Typography;
 
-const SwitchComponent = () => {
-  const codeString = `import { Switch } from '@arco-design/web-react';
-    
-<Switch />;`;
+const Checkboxs = () => {
+  const codeString = `import { Checkbox } from "@arco-design/web-react"
+
+<Checkbox>Checkbox</Checkbox>`;
 
   return (
     <div className="container">
-      <Title>Switch</Title>
+      <Typography.Title>Checkbox</Typography.Title>
       <Paragraph>
-        Mutually exclusive operation controls, users can turn on or turn off a
-        certain function.
+        Selects a single value, typically for submission in a form.
       </Paragraph>
       <Divider />
+
       <Title heading={4}>Basic</Title>
-      <Paragraph>The basic usage.</Paragraph>
-      <ReusableCard title={<Switch style={{ backgroundColor: "GrayText" }} />}>
+      <Paragraph>Basic usage.</Paragraph>
+      <ReusableCard title={<Checkbox>Checkbox</Checkbox>}>
         <SyntaxHighlighter
           language="jsx"
           style={docco}
@@ -34,4 +34,4 @@ const SwitchComponent = () => {
   );
 };
 
-export default SwitchComponent;
+export default Checkboxs;
