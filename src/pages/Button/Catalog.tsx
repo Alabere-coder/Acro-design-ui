@@ -4,10 +4,16 @@ const { Paragraph } = Typography;
 
 const ButtonCatalog = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 30 }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: 30,
+        padding: "0 20px",
+      }}
+    >
       <div>
         <div
-          className="px-10"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -78,7 +84,6 @@ const ButtonCatalog = () => {
           </div>
         </div>
         <div
-          className="px-10"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -138,10 +143,71 @@ const ButtonCatalog = () => {
             </Space>
           </div>
         </div>
+
+        {/* fdkjh */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: 20,
+          }}
+        >
+          <div>
+            <Space>
+              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+                disabled
+              </Paragraph>
+              <Button size="mini" type="primary" disabled status="default">
+                Mini
+              </Button>
+              <Button size="small" type="primary" disabled status="warning">
+                Small
+              </Button>
+              <Button size="default" type="primary" disabled status="danger">
+                Default
+              </Button>
+              <Button size="large" type="primary" disabled status="success">
+                Large
+              </Button>
+            </Space>
+          </div>
+          <div>
+            <Space>
+              <Button size="mini" type="secondary" disabled status="default">
+                Mini
+              </Button>
+              <Button size="small" type="secondary" disabled status="warning">
+                Small
+              </Button>
+              <Button size="default" type="secondary" disabled status="danger">
+                Default
+              </Button>
+              <Button size="large" type="secondary" disabled status="success">
+                Large
+              </Button>
+            </Space>
+          </div>
+          <div>
+            <Space>
+              <Button size="mini" type="outline" disabled status="default">
+                Mini
+              </Button>
+              <Button size="small" type="outline" disabled status="warning">
+                Small
+              </Button>
+              <Button size="default" type="outline" disabled status="danger">
+                Default
+              </Button>
+              <Button size="large" type="outline" disabled status="success">
+                Large
+              </Button>
+            </Space>
+          </div>
+        </div>
       </div>
       <div>
         <div
-          className="px-10"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -192,11 +258,11 @@ const ButtonCatalog = () => {
           </div>
         </div>
         <div
-          className="px-10"
           style={{
             display: "flex",
             flexDirection: "row",
             gap: 34,
+            marginBottom: 20,
           }}
         >
           <div>
@@ -230,6 +296,51 @@ const ButtonCatalog = () => {
                 Default
               </Button>
               <Button size="large" type="text" status="success">
+                Large
+              </Button>
+            </Space>
+          </div>
+        </div>
+
+        {/* disabled */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: 34,
+          }}
+        >
+          <div>
+            <Space>
+              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+                status
+              </Paragraph>
+              <Button size="mini" type="dashed" status="default" disabled>
+                Mini
+              </Button>
+              <Button size="small" type="dashed" status="warning" disabled>
+                Small
+              </Button>
+              <Button size="default" type="dashed" status="danger" disabled>
+                Default
+              </Button>
+              <Button size="large" type="dashed" status="success" disabled>
+                Large
+              </Button>
+            </Space>
+          </div>
+          <div>
+            <Space>
+              <Button size="mini" type="text" status="default" disabled>
+                Mini
+              </Button>
+              <Button size="small" type="text" status="warning" disabled>
+                Small
+              </Button>
+              <Button size="default" type="text" status="danger" disabled>
+                Default
+              </Button>
+              <Button size="large" type="text" status="success" disabled>
                 Large
               </Button>
             </Space>
