@@ -26,7 +26,9 @@ const ButtonCatalog = () => {
               Primary
             </Paragraph>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
                 size
               </Paragraph>
               <Button size="mini" type="primary">
@@ -93,7 +95,9 @@ const ButtonCatalog = () => {
         >
           <div>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
                 status
               </Paragraph>
               <Button size="mini" type="primary" status="default">
@@ -155,7 +159,9 @@ const ButtonCatalog = () => {
         >
           <div>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
                 disabled
               </Paragraph>
               <Button size="mini" type="primary" disabled status="default">
@@ -220,7 +226,9 @@ const ButtonCatalog = () => {
               Dashed
             </Paragraph>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
                 size
               </Paragraph>
               <Button size="mini" type="dashed">
@@ -267,7 +275,9 @@ const ButtonCatalog = () => {
         >
           <div>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
                 status
               </Paragraph>
               <Button size="mini" type="dashed" status="default">
@@ -312,8 +322,10 @@ const ButtonCatalog = () => {
         >
           <div>
             <Space>
-              <Paragraph style={{ margin: "auto", fontSize: "16px" }}>
-                status
+              <Paragraph
+                style={{ margin: "auto", fontSize: "16px", width: "65px" }}
+              >
+                disabled
               </Paragraph>
               <Button size="mini" type="dashed" status="default" disabled>
                 Mini
