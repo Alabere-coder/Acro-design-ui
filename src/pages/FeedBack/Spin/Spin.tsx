@@ -1,19 +1,15 @@
-import { Divider, Typography, Alert, Card } from "@arco-design/web-react";
+import { Card, Spin } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const AlertS = () => {
-  const codeString = `import { Alert, Button } from "@arco-design/web-react"
+const SpinComponent = () => {
+  const codeString = `import { Spin } from "@arco-design/web-react"
 
-<Alert content='Here is an example text' />`;
-
+<Spin />`;
   return (
     <div className="container">
-      <Typography.Title>Alert</Typography.Title>
-
-      <Divider />
-      <Card>
-        <Alert content="Here is an example text" />
+      <Card style={{ width: 560, marginBottom: "20px" }}>
+        <Spin />
       </Card>
       <SyntaxHighlighter
         language="jsx"
@@ -28,4 +24,4 @@ const AlertS = () => {
   );
 };
 
-export default AlertS;
+export default SpinComponent;

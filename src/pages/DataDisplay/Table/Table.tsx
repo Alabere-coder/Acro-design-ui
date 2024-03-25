@@ -3,11 +3,11 @@ import {
   Typography,
   Table,
   TableColumnProps,
+  Card,
 } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import ReusableCard from "../../../components/Card.";
-const { Title, Paragraph } = Typography;
+const { Paragraph } = Typography;
 
 const columns: TableColumnProps[] = [
   {
@@ -137,26 +137,18 @@ const TableComponent = () => {
       <Typography.Title>Table</Typography.Title>
       <Paragraph>A semantic table for presenting tabular data.</Paragraph>
       <Divider />
-
-      <Title heading={4}>Basic</Title>
-      <Paragraph>The simplest usage.</Paragraph>
-      <ReusableCard
-        title={
-          <div>
-            <Table columns={columns} data={data} />
-          </div>
-        }
+      <Card style={{ marginBottom: "20px" }}>
+        <Table columns={columns} data={data} />
+      </Card>
+      <SyntaxHighlighter
+        language="jsx"
+        style={docco}
+        customStyle={{
+          padding: "20px",
+        }}
       >
-        <SyntaxHighlighter
-          language="jsx"
-          style={docco}
-          customStyle={{
-            padding: "20px",
-          }}
-        >
-          {codeString}
-        </SyntaxHighlighter>
-      </ReusableCard>
+        {codeString}
+      </SyntaxHighlighter>
     </div>
   );
 };

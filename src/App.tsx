@@ -264,20 +264,30 @@ const App = () => {
             }
           >
             <SubMenu key="4_1" title={[<IconFolder />, "Avatar"]}>
-              <MenuItem key="4_1_1">
-                <IconApps /> Menu 1
-              </MenuItem>
-              <MenuItem key="4_1_2">
-                <IconApps /> Menu 2
-              </MenuItem>
+              <Link to="/avatar">
+                <MenuItem key="4_1_1">
+                  <IconApps /> Avatar
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="4_17" title={[<IconFolder />, "Badge"]}>
+              <Link to="/badge">
+                <MenuItem key="4_17_1">
+                  <IconApps /> Badge
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_2" title={[<IconFolder />, "Calendar"]}>
-              <MenuItem key="4_2_1">
-                <IconApps /> Menu 1
-              </MenuItem>
-              <MenuItem key="4_2_2">
-                <IconApps /> Menu 2
-              </MenuItem>
+              <Link to="/Calendar">
+                <MenuItem key="4_2_1">
+                  <IconApps /> Calendar
+                </MenuItem>
+              </Link>
+              <Link to="/Catalog">
+                <MenuItem key="4_2_2">
+                  <IconApps /> Catalog
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_3" title={[<IconFolder />, "Card"]}>
               <Link to="/card">
@@ -287,24 +297,32 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="4_4" title={[<IconFolder />, "Collapse"]}>
-              <MenuItem key="4_4_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/collapse">
+                <MenuItem key="4_4_1">
+                  <IconApps /> Collapse
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_5" title={[<IconFolder />, "Comment"]}>
-              <MenuItem key="4_5_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/comment">
+                <MenuItem key="4_5_1">
+                  <IconApps /> Comment
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_6" title={[<IconFolder />, "Description"]}>
-              <MenuItem key="4_6_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/description">
+                <MenuItem key="4_6_1">
+                  <IconApps /> Description
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_7" title={[<IconFolder />, "Image"]}>
-              <MenuItem key="4_7_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/image">
+                <MenuItem key="4_7_1">
+                  <IconApps /> Image
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_8" title={[<IconFolder />, "List"]}>
               <Link to="/list">
@@ -321,9 +339,11 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="4_10" title={[<IconFolder />, "Statistic"]}>
-              <MenuItem key="4_10_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/statistic">
+                <MenuItem key="4_10_1">
+                  <IconApps /> Statistic
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_11" title={[<IconFolder />, "Table"]}>
               <Link to="/table">
@@ -340,9 +360,11 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="4_13" title={[<IconFolder />, "Tag"]}>
-              <MenuItem key="4_13_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/tag">
+                <MenuItem key="4_13_1">
+                  <IconApps /> Tag
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_14" title={[<IconFolder />, "Tooltip"]}>
               <Link to="/tooltip">
@@ -352,14 +374,25 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="4_15" title={[<IconFolder />, "Tree"]}>
-              <MenuItem key="4_15_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/tree">
+                <MenuItem key="4_15_1">
+                  <IconApps /> Tree
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="4_16" title={[<IconFolder />, "Timeline"]}>
-              <MenuItem key="4_16_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/timeline">
+                <MenuItem key="4_16_1">
+                  <IconApps /> Timeline
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="4_18" title={[<IconFolder />, "Empty"]}>
+              <Link to="/empty">
+                <MenuItem key="4_18_1">
+                  <IconApps /> Empty
+                </MenuItem>
+              </Link>
             </SubMenu>
           </SubMenu>
 
@@ -374,11 +407,8 @@ const App = () => {
             }
           >
             <SubMenu key="5_1" title={[<IconFolder />, "Alert"]}>
-              <MenuItem key="5_1_1">
-                <IconApps /> Menu 1
-              </MenuItem>
               <Link to="/alert">
-                <MenuItem key="5_1_2">
+                <MenuItem key="5_1_1">
                   <IconApps /> Alert
                 </MenuItem>
               </Link>
@@ -412,14 +442,18 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="5_6" title={[<IconFolder />, "PopConfirm"]}>
-              <MenuItem key="5_6_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/popconfirm">
+                <MenuItem key="5_6_1">
+                  <IconApps /> PopConfirm
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="5_7" title={[<IconFolder />, "Progress"]}>
-              <MenuItem key="5_7_1">
-                <IconApps /> Menu 1
-              </MenuItem>
+              <Link to="/progress">
+                <MenuItem key="5_7_1">
+                  <IconApps /> Progress
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="5_8" title={[<IconFolder />, "Result"]}>
               <Link to="/result">
@@ -429,17 +463,78 @@ const App = () => {
               </Link>
             </SubMenu>
             <SubMenu key="5_9" title={[<IconFolder />, "Spin"]}>
-              <Link to="/popover">
+              <Link to="/spin">
                 <MenuItem key="5_9_1">
-                  <IconApps /> Popover
+                  <IconApps /> Spin
                 </MenuItem>
               </Link>
             </SubMenu>
-            <SubMenu key="5_10" title={[<IconFolder />, "Watermark"]}>
-              <MenuItem key="5_10_1">
+            <SubMenu key="5_10" title={[<IconFolder />, "Skeleton"]}>
+              <Link to="/skeleton">
+                <MenuItem key="5_10_1">
+                  <IconApps /> Skeleton
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="5_11" title={[<IconFolder />, "Watermark"]}>
+              <Link to="/watermark">
+                <MenuItem key="5_11_1">
+                  <IconApps /> Watemark
+                </MenuItem>
+              </Link>
+            </SubMenu>
+          </SubMenu>
+
+          {/* OTHERS SECTION */}
+          <SubMenu
+            key="6_0"
+            title={
+              <span>
+                <IconFolder />
+                Others
+              </span>
+            }
+          >
+            <SubMenu key="6_1" title={[<IconFolder />, "BackTop"]}>
+              <Link to="/backtop">
+                <MenuItem key="6_1_1">
+                  <IconApps /> BackTop
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="6_2" title={[<IconFolder />, "ResizeBox"]}>
+              <Link to="/resize">
+                <MenuItem key="6_2_1">
+                  <IconApps /> ResizeBox
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="6_3" title={[<IconFolder />, "Trigger"]}>
+              <Link to="/trigger">
+                <MenuItem key="6_3_1">
+                  <IconApps /> Trigger
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            {/* <SubMenu key="5_4" title={[<IconFolder />, "Modal"]}>
+              <Link to="/modal">
+                <MenuItem key="5_5_1">
+                  <IconApps /> Modal
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="5_5" title={[<IconFolder />, "Notification"]}>
+              <Link to="/notification">
+                <MenuItem key="5_5_1">
+                  <IconApps /> Notification
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="5_6" title={[<IconFolder />, "PopConfirm"]}>
+              <MenuItem key="5_6_1">
                 <IconApps /> Menu 1
               </MenuItem>
-            </SubMenu>
+            </SubMenu> */}
           </SubMenu>
 
           <Link to="/separator">

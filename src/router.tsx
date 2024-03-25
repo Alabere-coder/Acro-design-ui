@@ -1,18 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-import Alert from "./pages/DataDisplay/Avatar/Alert.tsx";
+import Alert from "./pages/FeedBack/Alert/Alert.tsx";
 import Buttons from "./pages/Button/Button.tsx";
 import Card from "./pages/DataDisplay/Card/Card.tsx";
 import Checkbox from "./pages/DataEntry/Checkbox/Checkbox.tsx";
 import Separator from "./pages/Separator.tsx";
-import Drawer from "./pages/Drawer.tsx";
+import Drawer from "./pages/FeedBack/Drawer/Drawer.tsx";
 import Dropdown from "./pages/Navigation/Dropdown/Dropdown.tsx";
 import List from "./pages/DataDisplay/List/List.tsx";
-import Modal from "./pages/Modal.tsx";
+import Modal from "./pages/FeedBack/Modal/Modal.tsx";
 import Popover from "./pages/DataDisplay/Popover/Popover.tsx";
 import Select from "./pages/DataEntry/Select/Select.tsx";
 import Table from "./pages/DataDisplay/Table/Table.tsx";
 import Tabs from "./pages/DataDisplay/Tabs/Tabs.tsx";
-import Textarea from "./pages/Textarea.tsx";
 import Inputs from "./pages/DataEntry/Inputs/Inputs.tsx";
 import App from "./App.tsx";
 import ButtonGroups from "./pages/Button/ButtonGroup.tsx";
@@ -28,6 +27,30 @@ import DatePickerComponent from "./pages/DataEntry/DatePicker/DatePicker.tsx";
 import FormComponent from "./pages/DataEntry/Form/Form.tsx";
 import RadioComponent from "./pages/DataEntry/Radio/Radio.tsx";
 import SliderComponent from "./pages/DataEntry/Slider/Slider.tsx";
+import TriggerComponent from "./pages/Others/Trigger/Trigger.tsx";
+import ResizeBoxComponent from "./pages/Others/ResizeBox/ResizeBox.tsx";
+import BackTopComponent from "./pages/Others/BackTop/BackTop.tsx";
+import MessageComponent from "./pages/FeedBack/Message/Message.tsx";
+import NotificationComponent from "./pages/FeedBack/Notification/Notification.tsx";
+import PopConfirmComponent from "./pages/FeedBack/PopConfirm/PopConfirm.tsx";
+import ProgressComponent from "./pages/FeedBack/Progress/Progress.tsx";
+import ResultComponent from "./pages/FeedBack/Result/Result.tsx";
+import SpinComponent from "./pages/FeedBack/Spin/Spin.tsx";
+import SkeletonComponent from "./pages/FeedBack/Skeleton/Skeleton.tsx";
+import WatermarkComponent from "./pages/FeedBack/Watermark/Watermark.tsx";
+import AvatarComponent from "./pages/DataDisplay/Avatar/Avatar.tsx";
+import BadgeComponent from "./pages/DataDisplay/Badge/Badge.tsx";
+import CalendarComponent from "./pages/DataDisplay/Calendar/Calendar.tsx";
+import CollapseComponent from "./pages/DataDisplay/Collapse/Collapse.tsx";
+import CommentComponent from "./pages/DataDisplay/Comment/Comment.tsx";
+import DescriptionComponent from "./pages/DataDisplay/description/Description.tsx";
+import ImageComponent from "./pages/DataDisplay/Image/Image.tsx";
+import Statisticcomponent from "./pages/DataDisplay/Statistic/Statistic.tsx";
+import TagComponent from "./pages/DataDisplay/Tag/Tag.tsx";
+import TooltipComponent from "./pages/DataDisplay/Tooltip/Tooltip.tsx";
+import TreeComponent from "./pages/DataDisplay/Tree/Tree.tsx";
+import TimelineComponent from "./pages/DataDisplay/Timeline/Timelne.tsx";
+import EmptyComponent from "./pages/DataDisplay/Empty/Empty.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -38,9 +61,42 @@ export const router = createBrowserRouter([
         path: "/getStarted",
         element: <Dashboard />,
       },
+      // FEEDBACK SECTION
       {
         path: "/alert",
         element: <Alert />,
+      },
+      {
+        path: "/message",
+        element: <MessageComponent />,
+      },
+      {
+        path: "/notification",
+        element: <NotificationComponent />,
+      },
+      {
+        path: "/popconfirm",
+        element: <PopConfirmComponent />,
+      },
+      {
+        path: "/progress",
+        element: <ProgressComponent />,
+      },
+      {
+        path: "/result",
+        element: <ResultComponent />,
+      },
+      {
+        path: "/spin",
+        element: <SpinComponent />,
+      },
+      {
+        path: "/skeleton",
+        element: <SkeletonComponent />,
+      },
+      {
+        path: "/watermark",
+        element: <WatermarkComponent />,
       },
 
       // BUTTON COMPONENTS
@@ -74,6 +130,7 @@ export const router = createBrowserRouter([
         path: "/card",
         element: <Card />,
       },
+
       // DATAENTRY
       {
         path: "/checkbox",
@@ -124,22 +181,59 @@ export const router = createBrowserRouter([
         path: "/step",
         element: <StepComponent />,
       },
-
-      {
-        path: "/list",
-        element: <List />,
-      },
       {
         path: "/modal",
         element: <Modal />,
+      },
+      {
+        path: "/select",
+        element: <Select />,
+      },
+
+      // DATADisplay
+      {
+        path: "/avatar",
+        element: <AvatarComponent />,
+      },
+      {
+        path: "/badge",
+        element: <BadgeComponent />,
+      },
+      {
+        path: "/calendar",
+        element: <CalendarComponent />,
+      },
+      {
+        path: "/collapse",
+        element: <CollapseComponent />,
+      },
+      {
+        path: "/comment",
+        element: <CommentComponent />,
+      },
+      {
+        path: "/description",
+        element: <DescriptionComponent />,
+      },
+      {
+        path: "/empty",
+        element: <EmptyComponent />,
+      },
+      {
+        path: "/image",
+        element: <ImageComponent />,
+      },
+      {
+        path: "/list",
+        element: <List />,
       },
       {
         path: "/popover",
         element: <Popover />,
       },
       {
-        path: "/select",
-        element: <Select />,
+        path: "/statistic",
+        element: <Statisticcomponent />,
       },
       {
         path: "/table",
@@ -150,8 +244,33 @@ export const router = createBrowserRouter([
         element: <Tabs />,
       },
       {
-        path: "/textarea",
-        element: <Textarea />,
+        path: "/tag",
+        element: <TagComponent />,
+      },
+      {
+        path: "/tooltip",
+        element: <TooltipComponent />,
+      },
+      {
+        path: "/tree",
+        element: <TreeComponent />,
+      },
+      {
+        path: "/timeline",
+        element: <TimelineComponent />,
+      },
+      // OTHER SECTION
+      {
+        path: "/backtop",
+        element: <BackTopComponent />,
+      },
+      {
+        path: "/resize",
+        element: <ResizeBoxComponent />,
+      },
+      {
+        path: "/trigger",
+        element: <TriggerComponent />,
       },
     ],
   },

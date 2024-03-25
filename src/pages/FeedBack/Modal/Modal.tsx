@@ -45,7 +45,7 @@ const Modals = () => {
       <Typography.Title>Modal</Typography.Title>
 
       <Divider />
-      <Card>
+      <Card style={{ width: 360, marginBottom: "20px" }}>
         <div>
           <Button onClick={() => setVisible(true)} type="primary">
             Open Modal

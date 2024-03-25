@@ -1,17 +1,15 @@
-import { Typography, Tooltip, Divider } from "@arco-design/web-react";
+import { Typography, Tooltip, Divider, Card } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import ReusableCard from "../../../components/Card.";
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 const TooltipComponent = () => {
-  const codeString = `import { Tooltip, Typography } from '@arco-design/web-react';
-const { Text } = Typography;  
+  const codeString = `import { Tooltip } from '@arco-design/web-react'; 
 
 <Tooltip content='This is tooltip content'>
-<Text style={{ marginRight: 20, }} >
-Mouse over to display tooltip
-</Text>
+  <Typography.Text style={{ marginRight: 20, }} >
+    Mouse over to display tooltip
+  </Typography.Text>
 </Tooltip>;`;
 
   return (
@@ -19,30 +17,23 @@ Mouse over to display tooltip
       <Title>Tooltip</Title>
       <Paragraph>A simple text popup tip.</Paragraph>
       <Divider />
-      <Title heading={4}>Basic</Title>
-      <Paragraph>
-        When the mouse is moved in, the bubble appears, and when the mouse is
-        moved out, the bubble disappears.
-      </Paragraph>
-      <ReusableCard
-        title={
-          <Tooltip content="This is tooltip content">
-            <Text style={{ marginRight: 20 }}>
-              Mouse over to display tooltip
-            </Text>
-          </Tooltip>
-        }
+
+      <Card style={{ marginBottom: "30px" }}>
+        <Tooltip content="This is tooltip content">
+          <Typography.Text style={{ marginRight: 20 }}>
+            Mouse over to display tooltip
+          </Typography.Text>
+        </Tooltip>
+      </Card>
+      <SyntaxHighlighter
+        language="jsx"
+        style={docco}
+        customStyle={{
+          padding: "20px",
+        }}
       >
-        <SyntaxHighlighter
-          language="jsx"
-          style={docco}
-          customStyle={{
-            padding: "20px",
-          }}
-        >
-          {codeString}
-        </SyntaxHighlighter>
-      </ReusableCard>
+        {codeString}
+      </SyntaxHighlighter>
     </div>
   );
 };

@@ -1,11 +1,4 @@
-import {
-  Divider,
-  Typography,
-  Button,
-  Menu,
-  Dropdown,
-  Card,
-} from "@arco-design/web-react";
+import { Button, Menu, Dropdown, Card } from "@arco-design/web-react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { IconDown } from "@arco-design/web-react/icon";
@@ -18,7 +11,7 @@ const dropList = (
   </Menu>
 );
 
-const Dropdowns = () => {
+const DropdownComponent = () => {
   const codeString = `import { Dropdown, Menu, Button, Space } from '@arco-design/web-react';
   import { IconDown } from '@arco-design/web-react/icon';
   const dropList = (
@@ -28,7 +21,7 @@ const Dropdowns = () => {
       <Menu.Item key='3'>Guangzhou</Menu.Item>
     </Menu>
   );
-  function Dropdowns () {
+  function DropdownComponent () {
     const [visible, setVisible] = useState(false);
     return (
       <Dropdown droplist={dropList} position='bl'>
@@ -36,15 +29,12 @@ const Dropdowns = () => {
       </Dropdown>
     );
   }
-  export default Dropdowns;`;
+  export default DropdownComponent;`;
 
   return (
     <>
       <div className="container">
-        <Typography.Title>Dropdown</Typography.Title>
-
-        <Divider />
-        <Card>
+        <Card style={{ width: 360, marginBottom: "20px" }}>
           <div>
             <Dropdown droplist={dropList} position="bl">
               <Button type="secondary">
@@ -67,4 +57,4 @@ const Dropdowns = () => {
   );
 };
 
-export default Dropdowns;
+export default DropdownComponent;
