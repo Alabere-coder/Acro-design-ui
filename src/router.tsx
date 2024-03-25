@@ -51,6 +51,12 @@ import TooltipComponent from "./pages/DataDisplay/Tooltip/Tooltip.tsx";
 import TreeComponent from "./pages/DataDisplay/Tree/Tree.tsx";
 import TimelineComponent from "./pages/DataDisplay/Timeline/Timelne.tsx";
 import EmptyComponent from "./pages/DataDisplay/Empty/Empty.tsx";
+import AutoCompleteComponent from "./pages/DataEntry/AutoComplete/AutoComplete.tsx";
+import CascaderComponent from "./pages/DataEntry/Cascader/Cascader.tsx";
+import ColorPickerComponent from "./pages/DataEntry/ColorPicker/ColorPicker.tsx";
+import InputTagComponent from "./pages/DataEntry/InputTag/InputTag.tsx";
+import InputNumberComponent from "./pages/DataEntry/InputNumber/InputNumber.tsx";
+import UploadComponent from "./pages/DataEntry/Upload/Upload.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -133,8 +139,20 @@ export const router = createBrowserRouter([
 
       // DATAENTRY
       {
+        path: "/autocomplete",
+        element: <AutoCompleteComponent />,
+      },
+      {
+        path: "/cascader",
+        element: <CascaderComponent />,
+      },
+      {
         path: "/checkbox",
         element: <Checkbox />,
+      },
+      {
+        path: "/colorpicker",
+        element: <ColorPickerComponent />,
       },
       {
         path: "/datepicker",
@@ -152,6 +170,19 @@ export const router = createBrowserRouter([
         path: "/radio",
         element: <RadioComponent />,
       },
+      {
+        path: "/inputTag",
+        element: <InputTagComponent />,
+      },
+      {
+        path: "/inputnumber",
+        element: <InputNumberComponent />,
+      },
+      {
+        path: "/upload",
+        element: <UploadComponent />,
+      },
+
       {
         path: "/divider",
         element: <Separator />,
