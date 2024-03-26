@@ -102,170 +102,6 @@ const App = () => {
               </MenuItem>
             </Link>
           </SubMenu>
-          {/* Navigation SECTION */}
-          <SubMenu
-            key="2_0"
-            title={
-              <span>
-                <IconFolder />
-                Navigation
-              </span>
-            }
-          >
-            <SubMenu key="2_1" title={[<IconFolder />, "Breadcrumb"]}>
-              <Link to="/breadcrumb">
-                <MenuItem key="2_1_1">
-                  <IconApps /> Breadcrumb
-                </MenuItem>
-              </Link>
-              <Link to="/dropbreadcrumb">
-                <MenuItem key="2_1_2">
-                  <IconApps /> DropdownBreadcrumb
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="2_3" title={[<IconFolder />, "Dropdown"]}>
-              <Link to="/dropdown">
-                <MenuItem key="2_3_1">
-                  <IconApps /> Dropdown
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="2_4" title={[<IconFolder />, "Menu"]}>
-              <Link to="/menu">
-                <MenuItem key="2_4_1">
-                  <IconApps /> Menu
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="2_5" title={[<IconFolder />, "Step"]}>
-              <Link to="/step">
-                <MenuItem key="2_5_1">
-                  <IconApps /> Step
-                </MenuItem>
-              </Link>
-            </SubMenu>
-          </SubMenu>
-
-          {/* DataEntry SECTION */}
-          <SubMenu
-            key="3_0"
-            title={
-              <span>
-                <IconFolder />
-                DataEntry
-              </span>
-            }
-          >
-            <SubMenu key="3_1" title={[<IconFolder />, "AutoComplete"]}>
-              <Link to="/autocomplete">
-                <MenuItem key="3_1_1">
-                  <IconApps /> AutoComplete
-                </MenuItem>
-              </Link>
-              <MenuItem key="3_1_2">
-                <IconApps /> Menu 2
-              </MenuItem>
-            </SubMenu>
-            <SubMenu key="3_2" title={[<IconFolder />, "Cascader"]}>
-              <Link to="/cascader">
-                <MenuItem key="3_2_1">
-                  <IconApps /> Cascader
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_3" title={[<IconFolder />, "Checkbox"]}>
-              <Link to="/checkbox">
-                <MenuItem key="3_3_1">
-                  <IconApps /> Checkbox
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_4" title={[<IconFolder />, "ColorPicker"]}>
-              <Link to="/colorpicker">
-                <MenuItem key="3_4_1">
-                  <IconApps /> Colorpicker
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_5" title={[<IconFolder />, "Datepicker"]}>
-              <Link to="/datepicker">
-                <MenuItem key="3_5_1">
-                  <IconApps /> DatePicker
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_6" title={[<IconFolder />, "Form"]}>
-              <Link to="/form">
-                <MenuItem key="3_6_1">
-                  <IconApps /> Form
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_7" title={[<IconFolder />, "Input"]}>
-              <Link to="/inputs">
-                <MenuItem key="3_7_1">
-                  <IconApps /> Input
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_8" title={[<IconFolder />, "InputTag"]}>
-              <Link to="/inputTag">
-                <MenuItem key="3_8_1">
-                  <IconApps /> InputTag
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_9" title={[<IconFolder />, "InputNumber"]}>
-              <Link to="/inputnumber">
-                <MenuItem key="3_9_1">
-                  <IconApps /> InputNumber
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_10" title={[<IconFolder />, "Radio"]}>
-              <Link to="/radio">
-                <MenuItem key="3_10_1">
-                  <IconApps /> Radio
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_11" title={[<IconFolder />, "Select"]}>
-              <Link to="/select">
-                <MenuItem key="3_11_1">
-                  <IconApps /> Select
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_12" title={[<IconFolder />, "Slider"]}>
-              <Link to="/slider">
-                <MenuItem key="3_12_1">
-                  <IconApps /> Slider
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_13" title={[<IconFolder />, "Switch"]}>
-              <Link to="/switch">
-                <MenuItem key="3_13_1">
-                  <IconApps /> Switch
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_14" title={[<IconFolder />, "TimePicker"]}>
-              <Link to="/timepicker">
-                <MenuItem key="3_14_1">
-                  <IconApps /> TimePicker
-                </MenuItem>
-              </Link>
-            </SubMenu>
-            <SubMenu key="3_15" title={[<IconFolder />, "Upload"]}>
-              <Link to="/upload">
-                <MenuItem key="3_15_1">
-                  <IconApps /> Upload
-                </MenuItem>
-              </Link>
-            </SubMenu>
-          </SubMenu>
 
           {/* DataDisplay SECTION */}
           <SubMenu
@@ -410,6 +246,126 @@ const App = () => {
             </SubMenu>
           </SubMenu>
 
+          {/* DataEntry SECTION */}
+          <SubMenu
+            key="3_0"
+            title={
+              <span>
+                <IconFolder />
+                DataEntry
+              </span>
+            }
+          >
+            <SubMenu key="3_1" title={[<IconFolder />, "AutoComplete"]}>
+              <Link to="/autocomplete">
+                <MenuItem key="3_1_1">
+                  <IconApps /> AutoComplete
+                </MenuItem>
+              </Link>
+              <MenuItem key="3_1_2">
+                <IconApps /> Menu 2
+              </MenuItem>
+            </SubMenu>
+            <SubMenu key="3_2" title={[<IconFolder />, "Cascader"]}>
+              <Link to="/cascader">
+                <MenuItem key="3_2_1">
+                  <IconApps /> Cascader
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_3" title={[<IconFolder />, "Checkbox"]}>
+              <Link to="/checkbox">
+                <MenuItem key="3_3_1">
+                  <IconApps /> Checkbox
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_4" title={[<IconFolder />, "ColorPicker"]}>
+              <Link to="/colorpicker">
+                <MenuItem key="3_4_1">
+                  <IconApps /> Colorpicker
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_5" title={[<IconFolder />, "Datepicker"]}>
+              <Link to="/datepicker">
+                <MenuItem key="3_5_1">
+                  <IconApps /> DatePicker
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_6" title={[<IconFolder />, "Form"]}>
+              <Link to="/form">
+                <MenuItem key="3_6_1">
+                  <IconApps /> Form
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_7" title={[<IconFolder />, "Input"]}>
+              <Link to="/inputs">
+                <MenuItem key="3_7_1">
+                  <IconApps /> Input
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_8" title={[<IconFolder />, "InputTag"]}>
+              <Link to="/inputTag">
+                <MenuItem key="3_8_1">
+                  <IconApps /> InputTag
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_9" title={[<IconFolder />, "InputNumber"]}>
+              <Link to="/inputnumber">
+                <MenuItem key="3_9_1">
+                  <IconApps /> InputNumber
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_10" title={[<IconFolder />, "Radio"]}>
+              <Link to="/radio">
+                <MenuItem key="3_10_1">
+                  <IconApps /> Radio
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_11" title={[<IconFolder />, "Select"]}>
+              <Link to="/select">
+                <MenuItem key="3_11_1">
+                  <IconApps /> Select
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_12" title={[<IconFolder />, "Slider"]}>
+              <Link to="/slider">
+                <MenuItem key="3_12_1">
+                  <IconApps /> Slider
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_13" title={[<IconFolder />, "Switch"]}>
+              <Link to="/switch">
+                <MenuItem key="3_13_1">
+                  <IconApps /> Switch
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_14" title={[<IconFolder />, "TimePicker"]}>
+              <Link to="/timepicker">
+                <MenuItem key="3_14_1">
+                  <IconApps /> TimePicker
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="3_15" title={[<IconFolder />, "Upload"]}>
+              <Link to="/upload">
+                <MenuItem key="3_15_1">
+                  <IconApps /> Upload
+                </MenuItem>
+              </Link>
+            </SubMenu>
+          </SubMenu>
+
           {/* FEEDBACK SECTION */}
           <SubMenu
             key="5_0"
@@ -494,6 +450,51 @@ const App = () => {
               <Link to="/watermark">
                 <MenuItem key="5_11_1">
                   <IconApps /> Watemark
+                </MenuItem>
+              </Link>
+            </SubMenu>
+          </SubMenu>
+
+          {/* Navigation SECTION */}
+          <SubMenu
+            key="2_0"
+            title={
+              <span>
+                <IconFolder />
+                Navigation
+              </span>
+            }
+          >
+            <SubMenu key="2_1" title={[<IconFolder />, "Breadcrumb"]}>
+              <Link to="/breadcrumb">
+                <MenuItem key="2_1_1">
+                  <IconApps /> Breadcrumb
+                </MenuItem>
+              </Link>
+              <Link to="/dropbreadcrumb">
+                <MenuItem key="2_1_2">
+                  <IconApps /> DropdownBreadcrumb
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="2_3" title={[<IconFolder />, "Dropdown"]}>
+              <Link to="/dropdown">
+                <MenuItem key="2_3_1">
+                  <IconApps /> Dropdown
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="2_4" title={[<IconFolder />, "Menu"]}>
+              <Link to="/menu">
+                <MenuItem key="2_4_1">
+                  <IconApps /> Menu
+                </MenuItem>
+              </Link>
+            </SubMenu>
+            <SubMenu key="2_5" title={[<IconFolder />, "Step"]}>
+              <Link to="/step">
+                <MenuItem key="2_5_1">
+                  <IconApps /> Step
                 </MenuItem>
               </Link>
             </SubMenu>
