@@ -57,6 +57,7 @@ import ColorPickerComponent from "./pages/DataEntry/ColorPicker/ColorPicker.tsx"
 import InputTagComponent from "./pages/DataEntry/InputTag/InputTag.tsx";
 import InputNumberComponent from "./pages/DataEntry/InputNumber/InputNumber.tsx";
 import UploadComponent from "./pages/DataEntry/Upload/Upload.tsx";
+import DropdownBreadcrumb from "./pages/Navigation/Breadcrumb/DropBreadcrumb.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -200,9 +201,14 @@ export const router = createBrowserRouter([
         path: "/dropdown",
         element: <Dropdown />,
       },
+
       {
         path: "/breadcrumb",
         element: <BreadcrumbComponent />,
+      },
+      {
+        path: "/dropbreadcrumb",
+        element: <DropdownBreadcrumb />,
       },
       {
         path: "/menu",

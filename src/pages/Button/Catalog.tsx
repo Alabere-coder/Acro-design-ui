@@ -9,8 +9,8 @@ const ButtonCatalog = () => {
         display: "flex",
         flexDirection: "column",
         gap: 30,
-        padding: "0 20px",
       }}
+      className="container"
     >
       <div>
         <div
@@ -212,12 +212,18 @@ const ButtonCatalog = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          maxWidth: "66%",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "row",
-            gap: 34,
+            justifyContent: "space-between",
             marginBottom: 20,
           }}
         >
@@ -269,7 +275,7 @@ const ButtonCatalog = () => {
           style={{
             display: "flex",
             flexDirection: "row",
-            gap: 34,
+            justifyContent: "space-between",
             marginBottom: 20,
           }}
         >
@@ -317,7 +323,7 @@ const ButtonCatalog = () => {
           style={{
             display: "flex",
             flexDirection: "row",
-            gap: 34,
+            justifyContent: "space-between",
           }}
         >
           <div>

@@ -48,7 +48,7 @@ const App = () => {
         </Button>
         <Menu
           defaultOpenKeys={["0"]}
-          defaultSelectedKeys={[""]}
+          defaultSelectedKeys={["0"]}
           style={{ width: "100%", marginTop: 70 }}
         >
           <Link to="/getStarted">
@@ -118,9 +118,11 @@ const App = () => {
                   <IconApps /> Breadcrumb
                 </MenuItem>
               </Link>
-              <MenuItem key="2_1_2">
-                <IconApps /> Menu 2
-              </MenuItem>
+              <Link to="/dropbreadcrumb">
+                <MenuItem key="2_1_2">
+                  <IconApps /> DropdownBreadcrumb
+                </MenuItem>
+              </Link>
             </SubMenu>
             <SubMenu key="2_3" title={[<IconFolder />, "Dropdown"]}>
               <Link to="/dropdown">
